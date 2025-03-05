@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
 
-    <section id="contact" class="content-section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email or LinkedIn.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Dynamic Portfolio</h1>
+            <p>I'm a Web Developer, always learning and evolving.</p>
+            <button class="cta-button" id="theme-toggle">Switch Theme</button>
+        </div>
     </section>
 
+    <!-- Smooth Scroll Navigation -->
+    <div class="scroll-indicator">
+        <a href="#about">
+            <span>↓</span> Scroll Down
+        </a>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Your Name | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
