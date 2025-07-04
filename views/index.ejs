@@ -1,0 +1,18 @@
+<%- include('partials/header', { title: 'ReadOft Blog' }) %>
+<section class="hero">
+  <h1>Welcome to ReadOft</h1>
+  <p>A simple blog showcasing the design plan.</p>
+</section>
+<main class="post-grid">
+  <% posts.forEach(post => { %>
+    <article class="post-card">
+      <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+      <p><%= post.content.substring(0, 60) %>...</p>
+    </article>
+  <% }) %>
+</main>
+<aside class="sidebar">
+  <h3>Spotlight</h3>
+  <p>Featured content highlighted here.</p>
+</aside>
+<%- include('partials/footer') %>
